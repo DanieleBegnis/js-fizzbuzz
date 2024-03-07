@@ -24,3 +24,13 @@
     align-items: center;
     margin: 10px;
 }
+
+.fizz {
+    background-color: white;
+}
+.buzz {
+    background-color:blue ;
+}
+.fizzbuzz {
+    background-color: red;
+}

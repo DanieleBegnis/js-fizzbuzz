@@ -3,7 +3,7 @@ const numbContainer = document.querySelector('#numbers-square');
 for(let i = 1; i <= 100; i++) {
     let numberDivision;
 
-    //quelli idvisibili per tre e cinque scrivo fizzbuzz
+    //quelli divisibili per tre e cinque scrivo fizzbuzz
     if(i % 3 && i % 5 === 0) {
         numberDivision = ' fizzbuzz';
 
@@ -22,7 +22,7 @@ for(let i = 1; i <= 100; i++) {
     console.log(i + numberDivision);
 
     //poi li scrivo nel HTML
-    const newSquare = `<div class="square">${i} ${numberDivision}</div>`;
+    const newSquare = `<div class="square ${numberDivision}">${i} ${numberDivision}</div>`;
     numbContainer.innerHTML += newSquare;
 }
 
