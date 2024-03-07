@@ -7,7 +7,6 @@ for(let i = 1; i <= 100; i++) {
     if(i % 3 && i % 5 === 0) {
         numberDivision = ' fizzbuzz';
 
-
     //quelli per 5 con buzz
     } else if(i % 5 === 0) {
         numberDivision = ' buzz';
