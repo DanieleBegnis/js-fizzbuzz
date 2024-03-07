@@ -2,12 +2,13 @@
 for(let i = 1; i <= 100; i++) {
     let numberDIvision;
     if(i % 3 && i % 5 === 0) {
-        numberDIvision = 'fizzbuzz';   
+        numberDIvision = ' fizzbuzz';   
     } else if(i % 5 === 0) {
-        numberDIvision = 'buzz';
+        numberDIvision = ' buzz';
     } else if(i % 3 === 0) {
-        numberDIvision = 'fizz';
-    }
+        numberDIvision = ' fizz';
+    } else
+    numberDIvision = ''
  
-    console.log(i + ' - ' + numberDIvision);
+    console.log(i + numberDIvision);
 }
