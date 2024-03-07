@@ -1,4 +1,5 @@
 //scrivo in console tutti i numeri da uno a cento, poi... 
+const numbContainer = document.querySelector('#numbers-square');
 for(let i = 1; i <= 100; i++) {
     let numberDIvision;
     //quelli idvisibili per tre e cinque scrivo fizzbuzz
@@ -18,4 +19,7 @@ for(let i = 1; i <= 100; i++) {
     console.log(i + numberDIvision);
 
     //poi li scrivo nel HTML
+    const newSquare = `<div class="square">${i} ${numberDIvision}</div>`;
+    numbContainer.innerHTML += newSquare;
 }
+
